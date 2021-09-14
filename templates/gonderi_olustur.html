@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "../static/styles/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ed84511727.js" crossorigin="anonymous"></script>
+        <title>my blog</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="d-flex flex-grow-1">
+                    <span class="w-100 d-lg-none d-block">
+                        <!-- hidden spacer to center brand on mobile --></span>
+                    <a class="navbar-brand" href="#"> echtr </a>
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar7">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                    <ul class="navbar-nav ms-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a href="posts" class="nav-link">posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">about me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+        <div class="container go_login">
+            <p style="color: green;">giriş başarılı</p>
+            <h2>gönderi oluştur</h2>
+            <form action="gonderi_olusturuluyor" method="POST">
+                <br><br><br>
+                <span>başlık: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name = "yazi_baslik" id="yazi_baslik"></span><br>
+                <span>resim ismi: <input type="text" name = "yazi_resim" id = "yazi_resim"></span><br><br>
+                <span>yazı:</span><br>
+                <textarea name = "yazi_yazi" id="yazi_yazi" cols="44" rows="10" style="resize: none;"></textarea>
+                <br><input type="submit" name="gonder" id="button_gonder" class = "btn btn-dark" style = "font-size: 110%; padding: 0.5% 2%;" value = "oluştur">
+            </form>
+        </div>
+    </body>
+</html>

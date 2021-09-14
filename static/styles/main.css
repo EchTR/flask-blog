@@ -1,0 +1,58 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gonderi_alani {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gonderi {
+  width: 25%;
+  margin: 1% 0% 1% 1%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.gonderi img {
+  width: 100%;
+}
+
+.gonderi h2 {
+  margin-top: 5px;
+}
+
+.gonderi p {
+  color: #34495e;
+}
+
+.go_login {
+  text-align: center;
+}
+
+.go_login span {
+  font-size: 125%;
+}
+/*# sourceMappingURL=main.css.map */
